@@ -23,6 +23,14 @@ public class sample {
 		catch(IOException e) {
 			System.out.println("ファイルの読み込みに失敗しました。");
 		}
+		finally {
+			try {
+				fr.close();
+			}
+			catch(IOException e) {
+				System.out.println("ファイルを閉じるのに失敗しました。");
+			}
+		}
 	}
 
 }
