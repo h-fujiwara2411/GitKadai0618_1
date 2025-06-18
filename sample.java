@@ -1,3 +1,5 @@
+package GitKadai0618_1;
+
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -17,6 +19,9 @@ public class sample {
 				System.out.print(c);
 				i = fr.read();
 			}
+		}
+		catch(IOException e) {
+			System.out.println("ファイルの読み込みに失敗しました。");
 		}
 	}
 
